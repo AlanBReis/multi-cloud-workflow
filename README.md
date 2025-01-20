@@ -6,12 +6,12 @@ Este projeto é uma plataforma SaaS que permite a orquestração de workflows co
 ## Funcionalidades
 - Autenticação e login do usuário
 - Interface visual para criação de workflows
-- Integração com AWS (ex.: S3) e Azure (ex.: Blob Storage) para armazenamento de dados
+- Integração com AWS S3 e Azure Blob Storage para armazenamento de dados
 - Execução automatizada dos workflows configurados
 - Suporte à camada gratuita da AWS e Azure para evitar custos
 
 ## Tecnologias Utilizadas
-- **Front-end:** JavaScript (pode incluir frameworks como React ou Vue.js)
+- **Front-end:** JavaScript 
 - **Back-end:** Flask (Python)
 - **Banco de Dados:** PostgreSQL
 - **Infraestrutura:** Terraform e Ansible para automação
