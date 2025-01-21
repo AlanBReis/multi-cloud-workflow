@@ -1,0 +1,15 @@
+{
+    "name": "multi-cloud-workflow-frontend",
+    "version": "1.0.0",
+    "description": "Front-end for Multi-cloud Workflow Orchestration",
+    "main": "index.html",
+    "scripts": {
+      "start": "http-server -p 4000"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "http-server": "^0.12.3"
+    }
+  }
+  
