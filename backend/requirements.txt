@@ -1,0 +1,3 @@
+Flask
+Flask-Cors  # Para permitir chamadas de API de origens diferentes
+psycopg2-binary  # Para conectar ao PostgreSQL
