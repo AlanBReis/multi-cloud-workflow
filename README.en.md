@@ -1,7 +1,3 @@
-
-### README (English)
-
-```markdown
 # Multi-Cloud Workflow
 
 ## Description
