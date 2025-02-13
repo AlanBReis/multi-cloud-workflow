@@ -1,20 +1,12 @@
-# Use uma imagem base do Node.js
-FROM node:14
-
-# Defina o diretório de trabalho
+# Usa a imagem do Node.js para construir o app
+FROM node:18-alpine AS build
 WORKDIR /app
-
-# Copie o package.json e package-lock.json (se existir)
-COPY package*.json ./
-
-# Instale as dependências (se houver)
+COPY package.json package-lock.json ./
 RUN npm install
-
-# Copie os arquivos restantes da aplicação
 COPY . .
+RUN npm run build
 
-# Exponha a nova porta que sua aplicação vai rodar
-EXPOSE 4000
-
-# Comando para iniciar a aplicação front-end
-CMD ["npm", "start"]
+# Usa uma imagem mais leve para servir o React em produção
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]

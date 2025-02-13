@@ -11,7 +11,7 @@ Este projeto é uma plataforma SaaS que permite a orquestração de workflows co
 - Suporte à camada gratuita da AWS e Azure para evitar custos
 
 ## Tecnologias Utilizadas
-- **Front-end:** JavaScript (pode incluir frameworks como React ou Vue.js)
+- **Front-end:** React
 - **Back-end:** Flask (Python)
 - **Banco de Dados:** PostgreSQL
 - **Infraestrutura:** Terraform e Ansible para automação
